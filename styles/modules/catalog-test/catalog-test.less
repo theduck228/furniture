@@ -1,0 +1,55 @@
+.catalog{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  .catalog__tabs-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    .tab-bg{
+      background-color: transparent;
+      color: #8F8D8D;
+      font-size: 14px;
+      margin-top: 90px;
+      gap: 25px;
+      border: 1px solid #454647;
+      border-radius: 20px;
+      padding:6px 16px 6px 16px;
+      text-align: center;
+      opacity: 0.5;
+      transition: transform 0.1s ease-in-out;
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+      &.mixitup-control-active{
+        background-color: @yellow;
+        font-weight: 600;
+        color: @dark-grey;
+      }
+    }
+  }
+  .tab-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .tab-content{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(2,1fr);
+      margin: 50px 0 0 0;
+      gap: 25px;
+      width: 98%;
+      .tab-item {
+        width: 100%;
+        grid-row: span 2;
+        grid-column: span 2;
+        &:first-child{
+          grid-row: span 2;
+          grid-column: span 2;
+        }
+      }
+    }
+  }
+}

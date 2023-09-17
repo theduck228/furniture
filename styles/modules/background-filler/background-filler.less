@@ -1,0 +1,80 @@
+.index.background-filler{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../images/Mask.png") no-repeat;
+  min-height: 500px;
+  background-size: cover;
+  justify-content: center;
+  .content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    h1{
+      display: flex;
+      flex-direction: column;
+      font-size: 60px;
+      line-height: 133%;
+      &:after{
+        margin-top: 40px;
+        content: "";
+        height: 1px;
+        width: 40%;
+        background-color: #6d7278;
+      }
+    }
+    p{
+      margin-top: 0;
+      color: @font-color-dark-grey;
+    }
+  }
+}
+@media screen and (max-width: 1368px){
+  .index.background-filler{
+    background-size: contain;
+    min-height: 500px !important;
+    .content{
+      transform: translateY(-20%);
+      h1{
+        font-size: 35px;
+      }
+      p{
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1080px){
+  .index.background-filler{
+    background-size: contain;
+    min-height: 400px !important;
+    .content{
+      h1{
+        font-size: 30px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 850px){
+  .index.background-filler{
+    background-size: contain;
+    min-height: 300px !important;
+    .content{
+      h1{
+        font-size: 25px;
+      }
+      p{
+        font-size: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .index.background-filler {
+    display: none;
+  }
+}

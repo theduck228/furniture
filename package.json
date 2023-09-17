@@ -1,0 +1,15 @@
+{
+  "name": "desire-furniture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fancyapps/ui": "^5.0.22",
+    "mixitup": "^3.3.1"
+  }
+}

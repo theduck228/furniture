@@ -1,0 +1,130 @@
+.about-us{
+  &.page__title{
+    height: 0;
+    background-color: transparent;
+    position: relative;
+    top: 30px;
+
+  }
+  &.background-filler{
+    display: flex;
+    background: url("../images/about-us-filler.png") no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    margin-bottom: 130px;
+  }
+  & .content{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    h1{
+      flex-wrap: wrap;
+      font-size: 60px;
+      margin: 0;
+      &:after{
+        content: none;
+      }
+    }
+  }
+  &__general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: clamp(300px,500px,500px);
+    margin-bottom: 60px;
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      overflow-y: hidden;
+      h1 {
+        font-size: 36px;
+        line-height: 166%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        &:after{
+          content: "";
+          height: 1px;
+          width: 20%;
+          background-color: @dark-grey;
+          margin-top: 30px;
+        }
+      }
+
+      p {
+        color: @font-color-dark-grey;
+        font-size: 16px;
+        line-height: 27px;
+        align-self: end;
+        width: 75%;
+      }
+    }
+    &-btn-scroller{
+      height: 20px;
+      margin-top: 20px;
+      border: none;
+      background-color: transparent;
+      transform: translateX(300%);
+    }
+  }
+  &__video{
+    background: url("../images/video-overlay.png") no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: clamp(200px, 414px, 620px);
+    &-play-btn{
+      width: 80px;
+      height: 80px;
+      position: relative;
+      top: 40%;
+      left: 50%;
+      border: none;
+    }
+  }
+  &__sponsors{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    &-wrapper{
+      display: flex;
+      width: 95%;
+      align-items: center ;
+      justify-content: space-between;
+      gap: 70px;
+      img{
+        width: 15%;
+      }
+    }
+  }
+  &.collection{
+    margin-top: 0;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 170px;
+  }
+  &.cards_container{
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
+  &.card{
+    margin-top: 0;
+    min-width: 150px !important;
+  }
+  &__video{
+    display: block;
+    width: 100%;
+    video{
+      width: 100%;
+    }
+  }
+}

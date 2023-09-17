@@ -1,0 +1,86 @@
+@black: #000000;
+@dark-grey: #363838;
+@grey: #DFDFDF;
+@white: #FFFFFF;
+@yellow: #FFEF35;
+@font-color-grey: #707070;
+@font-color-dark-grey: #5A5A5A;
+
+@text-fz: 16px;
+
+*{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: @white;
+}
+html,
+body{
+  height: 100%;
+  margin: 0;
+  background-color: @white;
+}
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 0;
+}
+main{
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto ;
+}
+h1{
+  color: @dark-grey;
+  font-family: 'Montserrat', sans-serif;
+}
+h2{
+  font-size: 20px;
+  color: @dark-grey;
+  font-family: 'Montserrat', sans-serif;
+}
+h3{
+  font-size: @text-fz;
+  color: @dark-grey;
+  opacity: 0.9;
+  font-family: 'Montserrat', sans-serif;
+}
+h4{
+  color: @font-color-dark-grey;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-indent: 13%;
+}
+.page__title{
+  display: flex;
+  background-color: @grey;
+  width: 100%;
+  align-items: center;
+  h4{
+    width: 100%;
+  }
+}
+iframe{
+  margin-bottom: 55px;
+}
+*::selection{
+  background-color: @yellow;
+  opacity: 0.5;
+}
+@import "modules/header/header";
+@import "modules/slider/slider";
+@import "modules/collection/collection";
+@import "modules/background-filler/background-filler";
+@import "modules/timeline/timeline";
+@import "modules/catalog/catalog";
+@import "modules/blog/blog";
+@import "modules/footer/footer";
+@import "modules/contact-us/contact-us";
+@import "modules/contacts-collection/contacts-collection";
+@import "modules/blog-body/blog-body";
+@import "modules/post/post";
+@import "modules/about us/about us";
+@import "modules/inspiration/inspiration";

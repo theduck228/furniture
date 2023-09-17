@@ -1,0 +1,68 @@
+.contacts-collection{
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  height: 350px;
+  margin-bottom: 120px;
+  justify-content: center;
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    height: clamp(100px, 170px, 300px);
+    align-items: center;
+  }
+  &__slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 19%;
+    height: 80%;
+    opacity: 1;
+    &:hover{
+      img{
+        opacity: 0.5;
+      }
+      .slide-info{
+        opacity: 1;
+      }
+    }
+    img{
+      width: 100%;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .slide-info{
+      padding: 60% 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transform: translateY(-80%) scale(0.8);
+      width: 100%;
+      background-size: cover;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      text-align: center;
+      h2{
+        color: @dark-grey;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        z-index: 99;
+      }
+    }
+  }
+  .pagination-dots{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    transform: translateY(500% );
+    .dot{
+      height: 8px;
+      width: 8px;
+      background-color: @dark-grey;
+      border-radius: 50%;
+      &.active{
+        background-color: @yellow;
+      }
+    }
+  }
+}

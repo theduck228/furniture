@@ -1,0 +1,142 @@
+.contact-us{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+  height: 650px;
+  &__header{
+    width: 15%;
+    h1{
+      display: flex;
+      flex-direction: column;
+      font-size: 36px;
+      font-weight: 700;
+      height: 80px;
+      justify-content: space-between;
+      overflow: clip;
+      &:after{
+        content: "";
+        height: 2px;
+        width: 70%;
+        background-color: #6D7278;
+      }
+    }
+  }
+  .contact-us__container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    .contact-us__socials{
+      display: flex;
+      width: 100%;
+      .socials-list{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        width: 30%;
+        list-style-type: none;
+        gap: 35px;
+        li a {
+          display: flex;
+          align-items: center;
+          &.facebook:before {
+            content: url("../images/facebook.svg");
+            width: 20px;
+            height: 20px;
+          }
+          &.instagram:before {
+            content: url("../images/instagram.svg");
+            width: 20px;
+            height: 20px;
+          }
+          &.pinterest:before {
+            content: url("../images/pinterest.svg");
+            width: 20px;
+            height: 20px;
+          }
+          &.whatsapp:before {
+            content: url("../images/whatsapp.svg");
+            width: 20px;
+            height: 20px;
+          }
+          &.youtube:before {
+            content: url("../images/youtube.svg");
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    p{
+      color: #a1a1a1;
+      line-height: 175%;
+      font-size: 16px;
+      margin: 0 0 10px 0;
+    }
+    .contact-us__contacts{
+      list-style-type: none;
+      padding: 0;
+      margin: 10px 0 10px 0;
+      li{
+        line-height: 27px;
+        font-size: 16px;
+        color: @font-color-dark-grey;
+      }
+    }
+    .email-reference {
+      color: @dark-grey;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 200%;
+      margin-top: 0;
+
+      &:before {
+        content: url("../images/envelope.svg");
+        margin-right: 10px;
+      }
+    }
+    .reg__container{
+      display: flex;
+      flex-direction: column;
+      height: 35%;
+      width: 100%;
+      .reg-data{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+          &__item{
+            width: 50%;
+            border-radius: 20px;
+            font-size: 16px;
+            text-indent: 10px;
+            line-height: 175%;
+            color: #a1a1a1;
+            border: 1px solid #363838;
+          }
+        }
+      }
+      .reg__message{
+        width: 100%;
+        height: 50%;
+        border-radius: 20px;
+        font-size: 16px;
+        text-indent: 10px;
+        line-height: 175%;
+        color: #a1a1a1;
+        border: 1px solid #363838;
+        resize: none;
+        margin-bottom: 20px;
+      }
+      .reg__send-btn{
+        width: 20%;
+        height: 15%;
+        border-radius: 20px;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        background-color: @dark-grey;
+        cursor: pointer;
+      }
+  }
+}

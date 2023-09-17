@@ -1,0 +1,89 @@
+.head-slider{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 120px;
+  .slider__content{
+    margin-bottom: 20px;
+    .slide{
+      display: flex;
+      width: 70%;
+      flex-direction:  row;
+      align-items: center;
+      gap: 10px;
+      img{
+        width: 50%;
+      }
+      .slider__content-box{
+        width: 50%;
+        h1{
+          font-size: 110px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          margin-top: 0;
+          margin-bottom: 20px;
+        }
+        .divider{
+          width: 20%;
+          background-color: @dark-grey;
+          height: 0.5px;
+        }
+        p{
+          color: @font-color-dark-grey;
+          font-size: @text-fz;
+          line-height: 168%;
+          width: 80%;
+        }
+      }
+    }
+  }
+  .pagination-dots{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    .swiper-pagination-bullet{
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+    }
+  }
+}
+.swiper-pagination-bullet-active{
+  background-color: @yellow !important;
+}
+.slider-container{
+  width: 100%;
+  background: url("../images/symmetry-and-style.png") no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width: 1360px){
+  .head-slider{
+    margin-bottom: 20px;
+  }
+  .slider__content-box{
+    h1{
+      font-size: 55px !important;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .slider__content-box{
+    h1{
+      font-size: 35px !important;
+    }
+    p{
+      font-size: calc(@text-fz/1.5) !important;
+    }
+  }
+}
+@media screen and (max-width: 400px){
+  .slider__content-box{
+    h1{
+      font-size: 20px !important;
+    }
+    p{
+      font-size: calc(@text-fz/2) !important;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.inspiration{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0 10px 0;
+  &:after{
+    content: "";
+    width: 100%;
+    height: clamp(200px, 414px, 638px);
+    margin-top: -350px;
+    background-image: url("../images/inspiration-bg.jpg");
+    z-index: -1;
+  }
+  &__container{
+    display: flex;
+    gap: 80px;
+    width: 100%;
+    margin-left: 180px;
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    h1{
+      font-size: 36px;
+      line-height: 166%;
+      margin-bottom: 0;
+      &:after{
+        content: "";
+        width: 20%;
+        height: 1px;
+        background-color: #6D7278;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+      }
+    }
+    p{
+      font-size: 16px;
+      line-height: 168%;
+      color: @font-color-dark-grey;
+      width: 65%;
+      margin-top: 0;
+    }
+  }
+  &__progress-list{
+    list-style-type: none;
+    padding: 0;
+    width: 65%;
+  }
+  &__progress-bar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
+  &__bar-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    h3{
+      margin-top: -30px;
+    }
+  }
+  &__line{
+    background-color: @dark-grey;
+    height: 2px;
+    border-radius: 4px;
+    margin-top: -2px;
+  }
+}

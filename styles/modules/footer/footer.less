@@ -1,0 +1,197 @@
+footer{
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 100%;
+  .footer-body{
+    display: flex;
+    background-color: @grey;
+    height: 340px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .footer-content{
+      display: flex;
+      width: 70%;
+      justify-content: space-between;
+      transform: scale(0.9) translateX(-7%);
+      .reg-container{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        h3{
+          margin: 0;
+        }
+        p{
+          color: @font-color-dark-grey;
+          font-size: @text-fz;
+          line-height: 168%;
+          width: 80%;
+
+        }
+        .email-reference{
+          color: @dark-grey;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 200%;
+          margin-top: 0;
+        }
+        .email-reference:before{
+          content: url("../images/envelope.svg");
+          margin-right: 10px;
+        }
+        .reg-container__reg-form{
+          width: 90%;
+          gap: 10px;
+          display: flex;
+          flex-wrap: nowrap;
+          .reg-container__reg-email{
+            width: clamp(200px, 65%, 450px);
+            background-color: transparent;
+            height: 40px;
+            border-radius: 21px;
+            border: 1px solid @dark-grey;
+            opacity: 0.7;
+            color: @dark-grey;
+            text-indent: 10px;
+            font-size: @text-fz;
+          }
+          .reg-container__reg-email::placeholder{
+            line-height: 50px;
+            font-size: @text-fz;
+            text-indent: 10px;
+          }
+          .reg-container__reg-email:focus{
+            color: @font-color-dark-grey;
+            line-height: 28px;
+            font-size: @text-fz;
+            text-indent: 10px;
+          }
+          .reg-container__reg-button{
+            text-align: center;
+            width: clamp(90px, 28%, 210px);
+            height: 42px;
+            border: none;
+            font-weight: 600;
+            border-radius: 21px;
+            background-color: @dark-grey;
+            font-size: @text-fz;
+          }
+        }
+      }
+      ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li{
+          margin-bottom: 20px;
+          a:any-link{
+            color: @font-color-grey;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: @text-fz;
+          }
+        }
+      }
+      .social-container{
+        width: 25%;
+        .item-1{
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+        .item-1:before{
+          content: url("../images/facebook.svg");
+        }
+        .item-2{
+          width: 20px;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+        .item-2:before{
+          content: url("../images/instagram.svg");
+        }
+        .item-3{
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+        .item-3:before{
+          content: url("../images/pinterest.svg");
+        }
+        .item-4{
+          height: 19px;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+        .item-4:before{
+          content: url("../images/whatsapp.svg");
+        }
+        .item-5{
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+        .item-5:before{
+          content: url("../images/youtube.svg");
+        }
+      }
+    }
+  }
+  .footer-secondary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @dark-grey;
+    height: 110px;
+    p{
+      font-size: @text-fz;
+      line-height: 175%;
+      color: #a1a1a1;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  footer{
+    height: 820px !important;
+  }
+  .footer {
+    &-body{
+      height: 720px !important;
+      align-items: center !important;
+      justify-content: end !important;
+    }
+    &-content {
+      flex-direction: row;
+      width: 90% !important;
+      align-items: end !important;
+      gap: 50px;
+      flex-wrap: wrap !important;
+      .reg-container{
+        width: 100% !important;
+        align-items: center;
+        p{
+          text-align: center;
+        }
+      }
+      .social-container{
+        width: 40% !important;
+        align-self: start;
+        box-sizing: border-box;
+        flex-basis: 40% !important;
+      }
+      .info-container{
+        display: grid;
+        align-self: center !important;
+        text-align: right;
+        width: 40% !important;
+        box-sizing: border-box;
+        flex-basis: 40% !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+.timeline{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  h1{
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__upper-items{
+    display: flex;
+    width: 65%;
+    .item-item-1{
+      width: 50%;
+      h2:before{
+        content: url("../images/designer.svg");
+        width: 40px;
+        height: 40px;
+      }
+      p{
+        width: 70%;
+      }
+    }
+    .item-item-3{
+      width: 50%;
+      h2:before{
+        content: url("../images/production.svg");
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  &__line{
+    width:62%;
+    img{
+      width: 100%;
+    }
+  }
+  &__lower-items{
+    display: flex;
+    width: 85%;
+    transform: translateX(32%);
+    .item-item-2{
+      width: 50%;
+      h2:before{
+        content: url("../images/measurement.svg");
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .item-item-4{
+      width: 50%;
+      h2:before{
+        content: url("../images/boxes.svg");
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  h2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+  }
+  p{
+    color: @font-color-dark-grey;
+    font-size: 16px;
+    line-height: 168%;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1100px){
+  .timeline{
+    &__container{
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width: 800px){
+  .timeline{
+    height: 800px;
+    margin-top: 50px;
+    &__container{
+      display: flex;
+      flex-direction: row !important;
+      height: 100%;
+      width: 95%;
+      align-items: start;
+    }
+    &__upper-items{
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      align-self: start !important;
+      align-items: start;
+      justify-content: space-between;
+      .item{
+        width: 100% !important;
+        h2{
+          font-size: 12px !important;
+          &:before{
+            width: 20px !important;
+            height: 20px !important;
+          }
+        }
+      }
+      p{
+        width: 150% !important;
+        font-size: 10px !important;
+      }
+    }
+    &__line{
+      height: 100%;
+      width: 20%;
+      transform: rotate(90deg) scale(400%,400%) translateX(-90%);
+      img{
+        margin-left: 20px;
+        height: 100% !important;
+        width: 200% !important;
+      }
+    }
+    &__lower-items{
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      align-self: end !important;
+      align-items: start;
+      transform: translateX(-10%);
+      h2{
+        font-size: 12px !important;
+      }
+      p{
+        width: 100% !important;
+        font-size: 10px !important;
+      }
+    }
+    &__card{
+      margin-bottom: 30px !important;
+    }
+  }
+}
